@@ -1,0 +1,5 @@
+name: 'UVA Library Drupal'
+type: theme
+description: "A simple theme that helps manage the Library's content"
+core: 8.x
+base theme: bartik 
