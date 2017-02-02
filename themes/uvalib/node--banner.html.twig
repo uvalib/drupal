@@ -103,9 +103,9 @@
     <h1>Mobile View</h1>
 
     <uvalib-banner banner-link="{{ node.field_action_link.uri }}"
-                   phone-image="{{ banner.phoneImage.url }}"
-                   display-title
-                   banner-title="{{ label }}"
+                   phone-image="{{ node.field_mobile_banner.url }}"
+                   display-title="{{ node.title.value }}"
+                   banner-title="{{ node }}"
                    banner-body="{{ node.body.value }}"
                    button-text="{{ node.field_button_text.value }}"
                    style="width: 300px;"></uvalib-banner>
