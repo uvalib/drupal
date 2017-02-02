@@ -99,6 +99,12 @@
   </header>
   <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
     <h1>Mobile View</h1>
+      <dl>
+        <dt>Title</dt>
+        <dd>{{ label }}</dd>
+        <dt>Link</dt>
+        <dd>{{ node.field_action_link.uri }}</dd>
+      </dl> 
     <h1>Tablet View</h1>
     <h1>Desktop View</h1>
   </div>

@@ -1,0 +1,18 @@
+{
+  "name": "uvalib-drupal",
+  "version": "0.0.1",
+  "description": "Using npm to help deploy these themes/modules to dev and prod environments",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uvalib/drupal.git"
+  },
+  "author": "Doug Chestnut <dougchestnut@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/uvalib/drupal/issues"
+  },
+  "homepage": "https://github.com/uvalib/drupal#readme"
+}
