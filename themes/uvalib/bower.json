@@ -1,0 +1,20 @@
+{
+  "name": "uvalib-drupal-theme",
+  "homepage": "https://github.com/uvalib/drupal",
+  "authors": [
+    "Doug Chestnut <dougchestnut@gmail.com>"
+  ],
+  "description": "Theme for UVA Library in Drupal",
+  "main": "",
+  "license": "Apache2.0",
+  "private": true,
+  "resolutions": {
+    "uvalib-theme": "0.0.4",
+    "uvalib-helper-libs": "1.1.3",
+    "uvalib-models": "0.0.2",
+    "lodash": "^4.17.4"
+  },
+  "dependencies": {
+    "uvalib-elements": "uvalib-components/uvalib-elements#^0.0.1"
+  }
+}
