@@ -1,3 +1,5 @@
+WARNING: Please don't edit the filesystem that these themes reside in if possible.  Content from https://github.com/uvalib/drupal will overwrite when committed.  Please make updated in the versioned repository when possible.
+
 Themes allow you to change the look and feel of your Drupal site. You can use
 themes contributed by others or create your own.
 
