@@ -1,7 +1,5 @@
 {#
 
-<!-- Foo Bar -->
-
 /**
  * @file
  * Theme override for a field.
@@ -76,6 +74,7 @@
     {% endif %}
     {% for item in items %}
       <div{{ item.attributes.addClass('field--item') }}>{{ item.content }}</div>
+      <div>{{ dump(item) }}</div>
     {% endfor %}
     {% if multiple %}
       </div>
