@@ -74,7 +74,8 @@
     {% endif %}
     {% for item in items %}
       <div{{ item.attributes.addClass('field--item') }}>{{ item.content }}</div>
-      <div>{{ dump(item) }}</div>
+      {% set ext = item.content['#item'].entity.uri.value|split('.')|last() %}
+      <div style="margin-bottom: 30px;">Production Link: <a href="https://storage.googleapis.com/uvalib-api.appspot.com/{{ item.content['#item'].entity.uuid.value }}.{{ ext }}">https://storage.googleapis.com/uvalib-api.appspot.com/{{ item.content['#item'].entity.uuid.value }}.{{ ext }}</a></div>
     {% endfor %}
     {% if multiple %}
       </div>
