@@ -5,7 +5,8 @@
   "scripts": {
     "deploy-theme": "rsync -avh themes/ $SERVER:/usr/share/drupal/themes",
     "switch-latest-release": "git tag | grep '^v.*' | sort -V | tail -n1 | xargs git checkout",
-    "deploy-prod": "export SERVER=drupal.lib.virginia.edu && npm run deploy-theme"
+    "deploy-prod": "export SERVER=drupal.lib.virginia.edu && npm run deploy-theme",
+    "deploy-test": "export SERVER=drupaltest.lib.virginia.edu && npm run deploy-theme"
   },
   "repository": {
     "type": "git",
