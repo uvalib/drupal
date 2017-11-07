@@ -102,33 +102,60 @@
   <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
     <h1>Mobile View</h1>
 
-    <uvalib-banner banner-link="{{ node.field_action_link.uri }}"
-                   phone-image="{{ file_url(node.field_mobile_banner.entity.fileuri) }}"
-                   display-title
-                   banner-title="{{ node.title.value }}"
-                   banner-body="{{ node.body.value }}"
-                   button-text="{{ node.field_button_text.value }}"
-                   style="width:100%; max-width:599px;"></uvalib-banner>
+    <uvalib-banner 
+        uuid="{{ node.uuid.value }}"
+        {% if node.field_narrow_text.value == 1 %}
+          narrow-text
+        {% endif %}
+        banner-link="{{ node.field_action_link.uri }}"
+        phone-image="{{ file_url(node.field_mobile_banner.entity.fileuri) }}"
+        display-title
+        banner-title="{{ node.title.value }}"
+        banner-body="{{ node.body.value }}"
+        button-text="{{ node.field_button_text.value }}"
+        {% if node.field_shady_mobile.value == 1 %}
+          shady-mobile
+        {% endif %}
+        tone = "{{ node.field_tone.value }}"
+        style="width:100%; max-width:599px;"></uvalib-banner>
 
     <h1>Tablet View</h1>
 
-    <uvalib-banner banner-link="{{ node.field_action_link.uri }}"
-                   tablet-image="{{ file_url(node.field_tablet_image.entity.fileuri) }}"
-                   display-title medium-screen
-                   banner-title="{{ node.title.value }}"
-                   banner-body="{{ node.body.value }}"
-                   button-text="{{ node.field_button_text.value }}"
+    <uvalib-banner
+        uuid="{{ node.uuid.value }}"
+        {% if node.field_narrow_text.value == 1 %}
+          narrow-text
+        {% endif %}
+        banner-link="{{ node.field_action_link.uri }}"
+        tablet-image="{{ file_url(node.field_tablet_image.entity.fileuri) }}"
+        display-title medium-screen
+        banner-title="{{ node.title.value }}"
+        banner-body="{{ node.body.value }}"
+        button-text="{{ node.field_button_text.value }}"
+        {% if node.field_shady_tablet.value == 1 %}
+          shady-tablet
+        {% endif %}
+        tone = "{{ node.field_tone.value }}"
                    style="width:100%; min-width:601px; max-width:992px;"></uvalib-banner>
 
     <h1>Desktop View</h1>
 
-    <uvalib-banner banner-link="{{ node.field_action_link.uri }}"
-                   desktop-image="{{ file_url(node.field_desktop_image.entity.fileuri) }}"
-                   display-title large-screen
-                   banner-title="{{ node.title.value }}"
-                   banner-body="{{ node.body.value }}"
-                   button-text="{{ node.field_button_text.value }}"
-                   style="width:100%; min-width:992px;"></uvalib-banner>
+    <uvalib-banner
+        uuid="{{ node.uuid.value }}"
+        {% if node.field_narrow_text.value == 1 %}
+          narrow-text
+        {% endif %} 
+        banner-link="{{ node.field_action_link.uri }}"
+        desktop-image="{{ file_url(node.field_desktop_image.entity.fileuri) }}"
+        display-title large-screen
+        banner-title="{{ node.title.value }}"
+        banner-body="{{ node.body.value }}"
+        button-text="{{ node.field_button_text.value }}"
+        {% if node.field_shady_desktop.value == 1 %}
+          shady-desktop
+        {% endif %}
+        tone = "{{ node.field_tone.value }}"
+        style="width:100%; min-width:992px;"></uvalib-banner>
 
   </div>
 </article>
